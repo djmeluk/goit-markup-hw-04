@@ -17,13 +17,12 @@
   </head>
   <body>
     <!-- Шапка -->
-    <header class="line">
+    <header>
       <div class="container main-nav">
         <nav class="main-nav">
           <a href="./index.html" class="logo"
             ><span class="web">Web</span>Studio</a
           >
-
           <ul class="nav list main-nav">
             <li class="item">
               <a href="./index.html" class="link current">Студія</a>
@@ -34,7 +33,6 @@
             <li class="item"><a href="" class="link">Контакти</a></li>
           </ul>
         </nav>
-
         <ul class="contact list main-nav">
           <li class="item">
             <a
@@ -42,18 +40,26 @@
               target="_blank"
               rel="noopener norefferer nofollow"
               class="link"
-              >info@devstudio.com</a
+              ><svg class="icon-contact" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li class="item">
-            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="link"
+              ><svg class="icon-contact" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
     </header>
     <main>
       <!-- Банер -->
-      <section class="banner">
+      <section class="banner overlay">
         <div class="container">
           <h1 class="banner-title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="button primary">Замовити послугу</button>
@@ -66,6 +72,11 @@
           <h2 class="visually-hidden">Особливості</h2>
           <ul class="features-list list">
             <li class="item">
+              <div class="card-features">
+                <svg width="70px" height="70px">
+                  <use href="./images/icons.svg#icon-antenna"></use>
+                </svg>
+              </div>
               <h3 class="features-title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="features-par">
                 Ідейні міркування, і навіть початок повсякденної роботи з
@@ -73,6 +84,11 @@
               </p>
             </li>
             <li class="item">
+              <div class="card-features">
+                <svg width="70px" height="70px">
+                  <use href="./images/icons.svg#icon-clock"></use>
+                </svg>
+              </div>
               <h3 class="features-title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="features-par">
                 Завдання організації, особливо рамки і місце навчання кадрів
@@ -80,12 +96,22 @@
               </p>
             </li>
             <li class="item">
+              <div class="card-features">
+                <svg width="70px" height="70px">
+                  <use href="./images/icons.svg#icon-diagram"></use>
+                </svg>
+              </div>
               <h3 class="features-title">ПЛАНУВАННЯ</h3>
               <p class="features-par">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li class="item">
+              <div class="card-features">
+                <svg width="70px" height="70px">
+                  <use href="./images/icons.svg#icon-astronaut"></use>
+                </svg>
+              </div>
               <h3 class="features-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="features-par">
                 Значимість цих проблем настільки очевидна, що реалізація

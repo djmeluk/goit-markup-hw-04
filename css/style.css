@@ -10,6 +10,7 @@
   --secondary-background-color: #2f303a;
   --address-link-color: rgba(255, 255, 255, 0.6);
   --button-active: #188ce8;
+  --overlay-background-color: #c4c4c4;
 }
 
 body {
@@ -114,8 +115,8 @@ ul {
 
 /* контакти */
 .contact {
-  display: flex;
   margin-left: auto;
+  display: flex;
 }
 
 .contact .item {
@@ -134,6 +135,12 @@ ul {
   line-height: 1.2px;
   letter-spacing: 0.02em;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.contact .icon-contact {
+  margin-right: 10px;
 }
 
 .contact .link:hover,
@@ -143,7 +150,7 @@ ul {
 
 /*банер*/
 .banner {
-  background-color: var(--secondary-background-color);
+  background: var(--overlay-background-color);
   padding: 200px 0;
   text-align: center;
 }
@@ -161,6 +168,20 @@ ul {
   margin-bottom: 30px;
 }
 
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/baner.jpg);
+}
 /* особливості*/
 .visually-hidden {
   position: absolute;
@@ -185,6 +206,15 @@ ul {
 
 .features .item {
   min-width: 270px;
+}
+
+.features .card-features {
+  width: 270px;
+  height: 120px;
+  background-color: var(--team-background-color);
+  border-radius: 4px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
 }
 
 .features .features-title {

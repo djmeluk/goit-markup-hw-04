@@ -38,10 +38,12 @@ ul {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  outline: 2px solid yellow;
 }
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+  outline: 2px solid red;
 }
 
 .list {
@@ -150,7 +152,7 @@ ul {
 
 /*банер*/
 .banner {
-  background: var(--overlay-background-color);
+  /* background-color: var(--overlay-background-color); */
   padding: 200px 0;
   text-align: center;
 }
@@ -270,7 +272,12 @@ ul {
 .team-list {
   display: flex;
 }
-
+.team .social-list{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 16px;
+  padding-bottom: 30px;
+}
 .team .team-item {
   background-color: var(--primary-background-color);
   min-width: 270px;
@@ -289,7 +296,7 @@ ul {
 }
 
 .team .card {
-  padding: 30px 0px;
+  padding: 30px 0px 0px;
   text-align: center;
 }
 
@@ -316,7 +323,28 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
-
+/* постійні клієнти */
+.clients .clients-title {
+  color: var(--title-text-color);
+    font-size: 36px;
+    text-align: center;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+.clients .clients-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.clients .card-clients {
+  width: 170px;
+    height: 92px;
+    background-color: #F5F5F5;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+  
 /* футер */
 .footer {
   background-color: var(--secondary-background-color);

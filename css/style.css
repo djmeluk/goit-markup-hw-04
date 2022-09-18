@@ -155,9 +155,10 @@ ul {
 
 /*банер*/
 .banner {
-  /* background-color: var(--overlay-background-color); */
+  
   padding: 200px 0;
-  text-align: center;
+  text-align: center; 
+  background-color: var(--overlay-background-color);
 }
 
 .banner .banner-title {
@@ -178,7 +179,8 @@ ul {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-size: contain;
+  background-position: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-image: linear-gradient(
       to right,
